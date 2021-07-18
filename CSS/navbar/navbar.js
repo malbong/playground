@@ -4,11 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	const icons = document.querySelector('.navbar__icons');
 
 	toggleBtn.addEventListener('click', () => {
-		const originLeftPos = toggleBtn.offsetLeft;
 		const originTopPos = toggleBtn.offsetTop;
-		const originRightPos = document.offsetWidth - originLeftPos;
 
-		toggleBtn.style.right = `${originRightPos}px`;
 		toggleBtn.style.top = `${originTopPos}px`;
 
 		menu.classList.toggle('active');
